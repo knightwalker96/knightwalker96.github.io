@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Portfolio"
+title: ""
 permalink: /portfolio/
 author_profile: true
 ---
@@ -13,6 +13,6 @@ author_profile: true
 {% for post in site.portfolio reversed %}
   {% include archive-single.html %}
   {% if post.github %}
-    <p><a href="{{ post.github }}">View on GitHub</a></p>
+    <p><a href="{{ post.github }}">Github Project Link</a></p>
   {% endif %}
 {% endfor %}
