@@ -26,8 +26,8 @@ main:
   #- title: "CV"
   #  url: /cv/
     
-   - title: "CV"
-     url: /files/resume.pdf
+  - title: "CV"
+    url: /files/resume.pdf
     
   - title: "Guide"
     url: /markdown/
