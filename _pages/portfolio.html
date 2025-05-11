@@ -10,9 +10,47 @@ author_profile: true
 <h2>Projects</h2>
 <hr />
 
+<!-- Dropdown for filtering by project type -->
+<div style="margin-bottom: 20px;">
+  <label for="project-type-filter">Filter by Type: </label>
+  <select id="project-type-filter" onchange="filterProjects()">
+    <option value="all">All</option>
+    <option value="Reinforcement Learning">Reinforcement Learning</option>
+    <option value="Graph Machine Learning">Graph Machine Learning</option>
+    <option value="Natural Language Processing">Natural Language Processing</option>
+    <option value="Generative AI">Generative AI</option>
+    <option value="Agentic AI / RAG">Generative AI / RAG</option>
+  </select>
+</div>
+
+<!-- Project list -->
+<div id="project-list">
 {% for post in site.portfolio reversed %}
-  {% include archive-single.html %}
-  {% if post.github %}
-    <p><a href="{{ post.github }}">Github Project Link</a></p>
-  {% endif %}
+  <div class="project-item" data-type="{{ post.type | default: 'none' }}">
+    {% include archive-single.html %}
+    {% if post.github %}
+      <p><a href="{{ post.github }}">Github Project Link</a></p>
+    {% endif %}
+  </div>
 {% endfor %}
+</div>
+
+<!-- JavaScript for filtering -->
+<script>
+function filterProjects() {
+  const filterValue = document.getElementById("project-type-filter").value;
+  const projectItems = document.querySelectorAll(".project-item");
+
+  projectItems.forEach(item => {
+    const projectType = item.getAttribute("data-type");
+    if (filterValue === "all" || projectType === filterValue) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+// Run filter on page load to apply default "All" selection
+document.addEventListener("DOMContentLoaded", filterProjects);
+</script>
