@@ -40,13 +40,16 @@ author_profile: true
   /* Style the container */
   div[style="margin-bottom: 20px;"] {
     margin-bottom: 20px;
+    background-color: #333; /* Dark background for visibility */
+    padding: 10px;
+    border-radius: 4px;
   }
 
   /* Style the label */
   label[for="project-type-filter"] {
     font-size: 16px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff; /* White text */
     margin-right: 10px;
   }
 
@@ -57,21 +60,21 @@ author_profile: true
     border-bottom: 1px solid #666;
     padding: 5px;
     font-size: 16px;
-    color: #333;
+    color: #ffffff; /* Match label color for consistency */
     outline: none;
     cursor: pointer;
-    appearance: none; /* Remove default arrow in some browsers */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* White arrow */
     background-repeat: no-repeat;
     background-position: right center;
-    padding-right: 24px; /* Space for the arrow */
+    padding-right: 24px;
   }
 
   /* Hover effect for dropdown */
   #project-type-filter:hover {
-    border-bottom-color: #000;
+    border-bottom-color: #ccc;
   }
 
   /* Style for dropdown options */
