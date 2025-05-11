@@ -9,7 +9,7 @@ baseurl: ""
 repository: "knightwalker96/knightwalker96.github.io"
 
 author:
-  avatar: "/assets/images/pPhoto.jpeg"
+  avatar: "/assets/images/Photo.jpeg"
   name: "Soumyodeep Dey"
   bio: "M.Tech student in AI at IIT Delhi, focusing on Large Language Models and Graph Neural Networks. Teaching Assistant and former software engineer at Samsung and Publicis Sapient."
   location: "Delhi, India"
@@ -18,6 +18,8 @@ author:
   googlescholar: "https://scholar.google.com/citations?user=4gA_CyIAAAAJ&hl=en"
   github: "knightwalker96"
   linkedin: "welcome-to-the-profile-of-soumyodeep"
+  instagram: "knightwalker96" 
+  youtube: "soumyodeepdey5237"
   
 
 publication_category:
@@ -48,6 +50,8 @@ social:
   links:
     - "https://www.linkedin.com/in/welcome-to-the-profile-of-soumyodeep/"
     - "https://github.com/knightwalker96"
+    - "https://www.instagram.com/knightwalker96/"
+    - "https://www.youtube.com/@soumyodeepdey5237"
 
 analytics:
   provider: "false"
