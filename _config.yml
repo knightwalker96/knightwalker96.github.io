@@ -9,7 +9,7 @@ baseurl: ""
 repository: "knightwalker96/knightwalker96.github.io"
 
 author:
-  avatar: "/images/Photo.jpeg"
+  avatar: "Photo.jpeg"
   name: "Soumyodeep Dey"
   bio: "Hey guys!!, welcome to my website. Browse through and let me know if you find anything interesting..."
   location: "Delhi, India"
