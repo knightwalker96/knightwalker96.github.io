@@ -35,6 +35,52 @@ author_profile: true
 {% endfor %}
 </div>
 
+<!-- CSS for dropdown styling -->
+<style>
+  /* Style the container */
+  div[style="margin-bottom: 20px;"] {
+    margin-bottom: 20px;
+  }
+
+  /* Style the label */
+  label[for="project-type-filter"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+  }
+
+  /* Style the dropdown */
+  #project-type-filter {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    appearance: none; /* Remove default arrow in some browsers */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 24px; /* Space for the arrow */
+  }
+
+  /* Hover effect for dropdown */
+  #project-type-filter:hover {
+    border-bottom-color: #000;
+  }
+
+  /* Style for dropdown options */
+  #project-type-filter option {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+</style>
+
 <!-- JavaScript for filtering -->
 <script>
 function filterProjects() {
