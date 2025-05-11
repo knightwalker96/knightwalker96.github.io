@@ -1,0 +1,16 @@
+---
+title: "Sentiment and emotion-aware multi-modal complaint identification"
+collection: publications
+category: conference
+permalink: /publication/Paper-1
+excerpt: 'This paper is about multimodality in data can be leveraged to identify complaints.'
+date: 2022-06-28
+venue: 'Proceedings of the 36th AAAI Conference on Artificial Intelligence'
+#slidesurl: 'http://knightwalker96.github.io/files/slides1.pdf'
+paperurl: 'http://knightwalker96.github.io/files/paper1.pdf'
+#bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
+citation: 'Apoorva Singh, Soumyodeep Dey, Anamitra Singha,
+and Sriparna Saha. 2022. Sentiment and emotionaware multi-modal complaint identification. In Proc.
+of AAAI, pages 12163–12171.'
+---
+The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
