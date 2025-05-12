@@ -7,9 +7,6 @@ author_profile: true
 
 {% include base_path %}
 
-<h2>Professional Experiences</h2>
-<hr />
-
 {% for post in site.experiences reversed %}
   <div class="experience-item">
     <h3 class="archive__item-title">
@@ -30,6 +27,11 @@ author_profile: true
   .experience-item h3 {
     margin-bottom: 5px;
     font-size: 1.25em;
+  }
+  .archive__item-title {
+    display: block !important;
+    visibility: visible !important;
+    color: #000 !important;
   }
   .experience-item p {
     margin: 5px 0;
