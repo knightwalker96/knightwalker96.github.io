@@ -1,16 +1,38 @@
 ---
 layout: archive
-title: "Talks and presentations"
-permalink: /talks/
+title: "Experiences"
+permalink: /experiences/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% for post in site.experiences reversed %}
+  <div class="experience-item">
+    <h3 class="archive__item-title">
+      {{ post.role }} at {{ post.company }}
+    </h3>
+    <p><strong>Timeline:</strong> {{ post.timeline }}</p>
+    <div class="experience-description">
+      {{ post.content | markdownify }}
+    </div>
+  </div>
 {% endfor %}
+
+<style>
+  .experience-item {
+    margin-bottom: 20px;
+  }
+  .experience-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.25em;
+  }
+  .experience-item p {
+    margin: 5px 0;
+  }
+  .experience-description {
+    margin-top: 10px;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+</style>
