@@ -122,6 +122,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  experiences:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
   - scope:
@@ -171,6 +174,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
 
 sass:
   sass_dir: _sass
