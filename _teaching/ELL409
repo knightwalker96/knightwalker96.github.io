@@ -1,20 +1,9 @@
 ---
 title: "Teaching Assistant"
 collection: teaching
-type: "Workshop"
+description: "Introduction to Machine Learning (ELL409)"
 permalink: /teaching/ELL409
 venue: "IIT Delhi"
 date: 2024-08-01
 location: "Delhi, India"
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
