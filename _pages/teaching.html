@@ -8,5 +8,24 @@ author_profile: true
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  <div class="teaching-item">
+    <h3 class="archive__item-title">
+      {{ post.course_name }} ({{ post.course_code }})
+    </h3>
+    <p><strong>Timeline:</strong> {{ post.timeline }}</p>
+    <p><strong>Course Website:</strong> <a href="{{ post.course_website }}">{{ post.course_website }}</a></p>
+  </div>
 {% endfor %}
+
+<style>
+  .teaching-item {
+    margin-bottom: 20px;
+  }
+  .teaching-item h3 {
+    margin-bottom: 5px;
+    font-size: 1.25em;
+  }
+  .teaching-item p {
+    margin: 5px 0;
+  }
+</style>
