@@ -110,17 +110,55 @@ kramdown:
   enable_coderay: false
 
 collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
-  teaching:
+  talks:
     output: true
     permalink: /:collection/:path/
   experiences:
     output: true
     permalink: /:collection/:path/
-    
+
 defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   - scope:
       path: ""
       type: portfolio
@@ -131,17 +169,16 @@ defaults:
       comment: true
   - scope:
       path: ""
-      type: teaching
+      type: talks
     values:
-      layout: single
+      layout: talk
       author_profile: true
       share: true
-      comment: true
   - scope:
       path: ""
       type: experiences
     values:
-      layout: talk
+      layout: single
       author_profile: true
       share: true
       comment: true
