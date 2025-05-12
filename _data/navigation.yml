@@ -12,7 +12,7 @@ main:
     url: /portfolio/
     
   - title: "Experiences"
-    url: /portfolio/  
+    url: /talks/  
 
   - title: "Courses"
     url: /courses/
