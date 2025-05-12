@@ -141,7 +141,7 @@ defaults:
       path: ""
       type: experiences
     values:
-      layout: talk
+      layout: single
       author_profile: true
       share: true
       comment: true
