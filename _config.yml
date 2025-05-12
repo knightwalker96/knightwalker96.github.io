@@ -171,14 +171,14 @@ defaults:
       path: ""
       type: talks
     values:
-      layout: talk
+      layout: single
       author_profile: true
       share: true
   - scope:
       path: ""
       type: experiences
     values:
-      layout: single
+      layout: talk
       author_profile: true
       share: true
       comment: true
