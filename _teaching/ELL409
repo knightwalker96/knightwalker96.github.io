@@ -1,9 +1,9 @@
 ---
 title: "Teaching Assistant"
+course_name: "Introduction to Machine Learning"
+course_code: "ELL409"
+timeline: "Aug '24 - Dec '24"
+course_website: "https://lcs2-iitd.github.io/ELL409-2401/"
 collection: teaching
-description: "Introduction to Machine Learning (ELL409)"
 permalink: /teaching/ELL409
-venue: "IIT Delhi"
-date: 2024-08-01
-location: "Delhi, India"
 ---
