@@ -1,42 +1,40 @@
 ---
 layout: archive
-title: "Talks"
+title: "Experiences"
 permalink: /talks/
 author_profile: true
 ---
 
 {% include base_path %}
 
-<h2>Talks and Presentations</h2>
+<h2>Professional Experiences</h2>
 <hr />
 
-{% for post in site.talks reversed %}
-  <div class="talk-item">
+{% for post in site.experiences reversed %}
+  <div class="experience-item">
     <h3 class="archive__item-title">
-      <a href="{{ post.permalink }}">{{ post.title }}</a>
+      {{ post.role }} at {{ post.company }}
     </h3>
-    <p><strong>Date:</strong> {{ post.date | date: "%B %d, %Y" }}</p>
-    <p><strong>Type:</strong> {{ post.talk_type }}</p>
-    <p><strong>Venue:</strong> {{ post.venue }}</p>
+    <p><strong>Timeline:</strong> {{ post.timeline }}</p>
     <p><strong>Location:</strong> {{ post.location }}</p>
-    <div class="talk-description">
+    <div class="experience-description">
       {{ post.content | markdownify }}
     </div>
   </div>
 {% endfor %}
 
 <style>
-  .talk-item {
+  .experience-item {
     margin-bottom: 20px;
   }
-  .talk-item h3 {
+  .experience-item h3 {
     margin-bottom: 5px;
     font-size: 1.25em;
   }
-  .talk-item p {
+  .experience-item p {
     margin: 5px 0;
   }
-  .talk-description {
+  .experience-description {
     margin-top: 10px;
     font-size: 0.95em;
     line-height: 1.6;
