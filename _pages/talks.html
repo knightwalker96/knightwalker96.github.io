@@ -7,10 +7,13 @@ author_profile: true
 
 {% include base_path %}
 
+<h2>Professional Experiences</h2>
+<hr />
+
 {% for post in site.experiences reversed %}
   <div class="experience-item">
     <h3 class="archive__item-title">
-      {{ post.role }} at {{ post.company }}
+      <a href="{{ post.permalink }}">{{ post.role }} at {{ post.company }}</a>
     </h3>
     <p><strong>Timeline:</strong> {{ post.timeline }}</p>
     <div class="experience-description">
