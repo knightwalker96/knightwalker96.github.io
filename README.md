@@ -1,4 +1,1 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
-
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+I have forked this repository from [here](https://github.com/academicpages/academicpages.github.io) and customized it according to my own requirements. You can do the same by first forking the required github pages repository that you want the template of. You must fork it, cloning won't suffice. Then you just have to rename the repository to your_username.github.io . Once all the commits are processed and the deployment is done you can go to your personal website: https://your_username.github.io. You can track all the workflow runs and the deployments in the "Actions" tab. Good luck making your own one!
