@@ -18,13 +18,7 @@ main:
     url: /courses/
 
   - title: "Publications"
-    url: /publications/  
-
-  - title: "Teaching"
-    url: /teaching/    
-        
-  - title: "Blogs"
-    url: /year-archive/
+    url: /publications/     
     
   - title: "CV"
     url: /files/resume.pdf
